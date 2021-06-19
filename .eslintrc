@@ -1,0 +1,40 @@
+{
+    "extends": ["airbnb", "prettier"],
+    "env": {
+        "browser": true
+    },
+    "plugins": ["prettier", "react", "immutable", "prefer-arrow"],
+    "parser": "babel-eslint",
+    "rules": {
+        "no-console": "off",
+        "semi": ["error", "never"],
+        "arrow-parens": ["error", "as-needed"],
+        "comma-dangle": ["error", "never"],
+        "spaced-comment": ["error", "always"],
+        "no-plusplus": "off",
+        "prefer-promise-reject-errors": "off",
+        "no-underscore-dangle": "off",
+        "no-shadow": "off",
+        "curly": "error",
+        "prefer-arrow/prefer-arrow-functions": [
+            "error",
+            {
+                "disallowPrototype": true,
+                "singleReturnOnly": false,
+                "classPropertiesAllowed": false
+            }
+        ],
+        "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
+        "func-style": ["error", "expression", { "allowArrowFunctions": true }],
+        "react/jsx-props-no-spreading": "off",
+        // "react/prop-types": "on",
+        // "react/require-default-props": "off", //Активировать проверку при полноценной реализации проверки типов через propTypes
+        // "react/forbid-prop-types": "off", //Активировать проверку после перехода на react 16, material ui
+        // "react/no-deprecated": "off", //Активировать проверку после перехода на react 16, material ui
+        // "react/static-property-placement": "on",
+        // "react/state-in-constructor": "on",
+        // "react/destructuring-assignment": "off", //Активировать проверку после перехода на react 16, material ui
+        // "jsx-a11y/label-has-associated-control": "off", //Активировать проверку после перехода на react 16, material ui
+        "immutable/no-mutation": "error"
+    }
+}
